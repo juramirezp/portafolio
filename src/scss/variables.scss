@@ -1,0 +1,36 @@
+// Colores
+$burdeo: #8C1822;
+$azul:#2A4A64;
+$verde:#094042;
+$gris:#353D40;
+$negro: #22201D;
+
+//fuentes
+$julius: 'Julius Sans One', sans-serif;
+
+//mixins
+@mixin bgSection($img, $height:100vh){
+	min-height:$height;
+	background-image:url($img);
+	background-size:cover;
+	background-position:center;
+}
+
+@mixin shadowBottom(){
+	box-shadow: 0px 1px 5px #888888;
+}
+
+@mixin titleSection(){
+	font-size: 1.3em;
+	width:100%;
+	text-align:center;
+	margin: 3em auto 2em auto;
+}
+
+@mixin dark(){
+	filter: url('#grayscale');
+		filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+		filter: Gray(); /* IE4-8 and 9 */
+
+		transition: all 0.3s ease;
+}

@@ -1,0 +1,124 @@
+.portafolio{
+    min-height: 100vh;
+    &-title{
+        @include titleSection();
+        margin-bottom: 3em;
+    }
+}
+
+.site-box{
+    position: relative;
+    overflow: hidden;
+    perspective:1000px;
+    width: 100%;
+    @include from(m){
+        width:50%;
+        float:left;    
+    }
+    &-img{
+        filter: url('#grayscale');
+        filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+        filter: Gray(); /* IE4-8 and 9 */
+
+        transition: all 0.3s ease;
+    }
+}
+.site-icon{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.site-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: all .5s ease;
+    height: 100%;
+    background-repeat: no-repeat;
+    backface-visibility:hidden;
+    transform-style: preserve-3d;
+    transform: translateY(110px) rotateX(-90deg);
+}
+.site-box .site-icon .front-content{
+    position: relative;
+    top:40%;
+    transform: translateY(-50%);
+}
+
+.site-box .site-icon .front-content i {
+    font-size: 28px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.site-box .site-icon .front-content h3 {
+    font-size: 20px;
+    color: $burdeo;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff 1px #fff;
+}
+.site-box .site-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom:10px;
+    text-transform: uppercase;
+}
+.site-box .site-content p {
+    font-size: 13px;
+    color: #b1b1b1;
+    margin:0;
+}
+.bitealo{
+    position: absolute;
+    top:0;
+    height: 100%;
+    &-content{        
+        background-image: url('../img/webs/bitealo.png');
+        background-size: 100% 100%;
+    }
+}
+.gitc{
+    position: absolute;
+    top:0;
+    height: 100%;
+    &-content{        
+        background-image: url('../img/webs/gitc.png');
+        background-size: 100% 100%;
+    }
+}
+.brisa{
+    position: absolute;
+    top:0;
+    height: 100%;
+    &-content{        
+        background-image: url('../img/webs/brisa.png');
+        background-size: 100% 100%;
+    }
+}
+.full{
+    position: absolute;
+    top:0;
+    height: 100%;
+    &-content{        
+        background-image: url('../img/webs/full.png');
+        background-size: 100% 100%;
+    }
+}
+.site-box:hover .site-icon{
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+.site-box:hover .site-content {
+    opacity: 1;
+    transform: rotateX(0);
+}

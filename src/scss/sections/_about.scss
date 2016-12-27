@@ -1,0 +1,21 @@
+.about{
+	min-height:100vh;
+	&-title{
+		@include titleSection;	
+	}
+	&-img{
+		width: 50%;
+		display: block;
+		margin:0 auto;
+		border-radius: 50%;
+	}
+	&-text{
+		width:90%;
+		margin:0 auto;
+		text-align: center;
+		margin-top: 1em;
+		&:last-child{
+			padding-bottom: 6em;
+		}
+	}
+}

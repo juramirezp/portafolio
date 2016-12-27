@@ -1,0 +1,32 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio Juramirezp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juramirezp/portafolio.git"
+  },
+  "author": "Juan Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juramirezp/portafolio/issues"
+  },
+  "homepage": "https://github.com/juramirezp/portafolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "browser-sync": "^2.18.5",
+    "cssnano": "^3.9.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.0.0"
+  },
+  "dependencies": {
+    "ed-grid": "^2.1.1"
+  }
+}

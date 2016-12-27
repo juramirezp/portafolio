@@ -1,0 +1,22 @@
+//Variables de control del sistema de grillas
+$cssCore    : false;
+$cssHelpers : true;
+$devMode    : false;
+
+// Importacion del sistema de grillas
+@import "../EDgrid/ed-grid";
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+// importacion de variables y bases
+@import "variables";
+@import "base";
+
+//importacion de secciones
+@import "./sections/_header";
+@import "./sections/_menu";
+@import "./sections/_inicio";
+@import "./sections/_about";
+@import "./sections/_skills";
+@import "./sections/_portafolio";
+@import "./sections/_contact";
+@import "./sections/_footer";

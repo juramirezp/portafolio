@@ -1,0 +1,24 @@
+
+.inicio{
+	@include bgSection('../img/img (4).jpg');
+	.ed-container{
+		margin-top:67vh;
+	}
+	&-name, &-subtitle{
+		font-size:1.7em;
+		color:white;
+		line-height:.5;
+		width: 100%;
+		text-align: center;
+		margin: 10px auto;
+	}
+	.sociales{
+		margin: 1em auto;
+		&-item{
+			color:white;
+			font-size:2em;
+			margin:0 .3em;
+		}	
+	}
+}
+
